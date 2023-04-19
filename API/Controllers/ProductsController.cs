@@ -34,11 +34,11 @@ namespace API.Controllers
         }
 
         // [HttpGet]
-        // public IActionResult GetAllProducts()
+        // public async Task<IActionResult> GetProducts()
         // {
         //     try
         //     {
-        //         List<Product> products = _context.Products.ToList();
+        //         List<Product> products = await _context.Products.ToListAsync();
         //         return Ok(products);
         //     }
         //     catch(Exception ex)
