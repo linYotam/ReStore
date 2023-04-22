@@ -8,11 +8,14 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './app/router/routes';
+import { StorePovider } from './app/context/StoreContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <StorePovider>
+      <RouterProvider router={router} />
+    </StorePovider>
   </React.StrictMode>
 );
 
