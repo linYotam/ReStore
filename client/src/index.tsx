@@ -18,13 +18,9 @@ import { store } from './app/store/configureStore';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
-  <React.StrictMode>
-    {/* <StorePovider> */}
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
-    {/* </StorePovider> */}
-  </React.StrictMode>
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
